@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<title>Pasajeros - segunda versión</title>
+</head>
+<body>
+		<div class="container">
+			<div class="text-right" style="margin-top: 10px; margin-bottom: 10px">
+				<button wicket:id="volverAlMenu" class="btn btn-info" style="margin-right: 30px">Volver</button>
+			</div>
+			<div class="panel panel-default">
+				<div class="panel-body">
+					<div class="row">
+				  		<div class="col-sm-4" style="font-weight: bold">
+							Nombre
+						</div>
+						<div class="col-sm-8">
+							<div wicket:id="nombre"></div>
+						</div>
+					</div><!-- /.row -->
+					<div class="row">
+				  		<div class="col-sm-4" style="font-weight: bold">
+							Teléfono
+						</div>
+						<div class="col-sm-8">
+							<div wicket:id="telefono"></div>
+						</div>
+					</div><!-- /.row -->
+					<div class="row">
+						<div class="col-sm-12">
+							<a wicket:id="verViajes">Ver viajes</a>
+						</div>
+					</div>					
+				</div>
+			</div>   <!--  /panel  -->
+			<div class="text-center">
+				<button wicket:id="verRicky" class="btn btn-primary">Ver Ricky</button>
+				<button wicket:id="verSusy" class="btn btn-success">Ver Susy</button>
+				<button wicket:id="verElton" class="btn btn-warning">Ver Elton</button>
+			</div>
+		</div>
+	</body>
+</html>

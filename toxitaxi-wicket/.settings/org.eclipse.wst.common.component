@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="toxitaxi-wicket">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <dependent-module archiveName="toxitaxi_interface.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/toxitaxi_interface/toxitaxi_interface">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="toxitaxi-modelo.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/toxitaxi-modelo/toxitaxi-modelo">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="toxitaxi-wicket"/>
+        <property name="java-output-path" value="/toxitaxi-wicket/build/classes"/>
+    </wb-module>
+</project-modules>

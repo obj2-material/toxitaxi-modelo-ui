@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<title>Viajes del pasajero</title>
+		<style>
+		.recuadro {
+			margin-top: 20px; margin-bottom: 20px;			
+			padding-top: 10px; padding-bottom: 10px; 
+			padding-left: 15px; padding-right: 15px;
+			border-style: solid; border-width: 2px; 
+			border-color: DarkBlue; border-radius: 4px;
+		}
+		.columna {
+			font-size: smaller;
+		}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row" style="margin-top: 20px; text-align: center; color: SlateBlue">
+				<h3>Información sobre un pasajero</h3>
+			</div>
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1">
+					<div class="recuadro">
+						<div class="row">
+							<div class="col-md-3" style="font-weight: bold;">Nombre</div>
+							<div class="col-md-9" wicket:id="nombrePas"></div>
+						</div>
+						<div class="row">
+							<div class="col-md-3" style="font-weight: bold;">Teléfono</div>
+							<div class="col-md-9" wicket:id="telefonoPas"></div>
+						</div>
+						<div class="row">
+							<div class="col-md-3" style="font-weight: bold;">Dirección principal</div>
+							<div class="col-md-9" wicket:id="direccionPrincipalPas"></div>
+						</div>
+					</div>
+				
+					<div class="row">
+						<div class="col-md-9">
+							<div class="panel panel-info" style="margin-top: 20px;">
+								<div class="panel-heading">
+									<h4>Viajes</h4>
+								</div>
+								<div class="panel-body">
+									<table class="table">
+										<thead>
+											<th>Origen</th>
+											<th>Destino</th>
+											<th>Estado</th>
+											<th>Chofer</th>
+										</thead>
+										<tbody>
+											<tr wicket:id="filaViaje">
+												<td wicket:id="origenViaje" class="columna"></td>
+												<td wicket:id="destinoViaje" class="columna"></td>
+												<td wicket:id="estadoViaje" class="columna"></td>
+												<td><a class="columna" href="#" wicket:id="choferViaje"></a></td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3" wicket:id="datosChofer">
+							<div class="recuadro" style="border-color: Teal;">
+								<div class="row" style="margin-bottom: 20px"><div class="col-md-12">
+									<div style="text-align: center; font-size: larger; color: SeaGreen; ">
+										Chofer elegido
+									</div>
+								</div></div>
+								
+								<div class="row"><div class="col-md-12"><div style="font-weight: bold;">
+									Nombre
+								</div></div></div>
+								<div class="row" style="margin-bottom: 6px"><div class="col-md-12">
+									<div wicket:id="nombreCho"></div>
+								</div></div>
+								
+								<div class="row"><div class="col-md-12"><div style="font-weight: bold;">
+									Teléfono
+								</div></div></div>
+								<div class="row" style="margin-bottom: 6px"><div class="col-md-12">
+									<div wicket:id="telefonoCho"></div>
+								</div></div>
+								
+								<div class="row"><div class="col-md-12"><div style="font-weight: bold;">
+									Cantidad de viajes
+								</div></div></div>
+								<div class="row" style="margin-bottom: 6px"><div class="col-md-12">
+									<div wicket:id="cantidadViajesCho"></div>
+								</div></div>
+								
+								<div class="row"><div class="col-md-12"><div style="font-weight: bold;">
+									Está en viaje
+								</div></div></div>
+								<div class="row" style="margin-bottom: 6px"><div class="col-md-12">
+									<div wicket:id="estaEnViajeCho"></div>
+								</div></div>
+							</div>
+						</div>
+					</div>	
+					
+					<div class="row">
+						<a wicket:id="volver">Volver atrás</a>
+					</div>			
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
